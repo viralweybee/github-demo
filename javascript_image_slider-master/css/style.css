@@ -1,0 +1,29 @@
+/*css/style.css */
+
+.slider{
+	margin:50px auto;
+	width:50%;
+	position: relative;
+}
+ 
+.img-box img{
+	width:100%;
+}
+.l-btn{
+	position: absolute;
+	left: 0%;
+}
+.btn{
+	border:none;
+	outline:none;
+	background:#888;
+	padding:10px 30px;
+	font-size: 20px;
+	color:#ddd;
+	cursor: pointer;
+	margin:10px auto;			 
+}
+
+.btn:hover{
+	background: #111;
+}
