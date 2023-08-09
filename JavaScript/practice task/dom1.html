@@ -16,7 +16,7 @@
             <th>Name</th>
         </tr>
         <tr>
-            <td><input type=checkbox></td>
+            <td><span id="check"><input type=checkbox class="viral"></span></td>
             <td><input id="rollno"></td>
             <td><input id="name"></td>
         </tr>
@@ -28,15 +28,24 @@
         function row() {
             var x = document.getElementById('mytable').insertRow(2)
             var y = x.insertCell(0)
-            var z = x.insertCell(1)
-            var a=x.insertCell(2);
+            var rollno = x.insertCell(1)
+            var name=x.insertCell(2);
             var rollEl=document.getElementById("rollno");
-            var numberEl=document.getElementById("name");
-            z.textContent = rollEl.value
-            a.textContent=numberEl.value;
+            var nameEl=document.getElementById("name");
+            var checkEl=document.getElementById("check")
+            y.innerHTML=checkEl.innerHTML
+            rollno.textContent = rollEl.value
+            name.textContent=nameEl.value;
         }
         function del(){
-            
+            var length=document.getElementsByTagName(input)
+            length-=2
+            for(let i=3;i<length;i++){
+                if(documennt.getElementsByTagName(input)[i].checked){
+                    document.getElementById('mytable').deleteRow(i-1)
+                }
+            }
+           
         }
     </script>
 </body>
