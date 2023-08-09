@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+</head>
+
+<body>
+    <h1>Dynamic Table</h1>
+    <table id="mytable" border="1">
+        <tr>
+            <th></th>
+            <th>Roll Number</th>
+            <th>Name</th>
+        </tr>
+        <tr>
+            <td><input type=checkbox></td>
+            <td><input id="rollno"></td>
+            <td><input id="name"></td>
+        </tr>
+    </table>
+    <br>
+    <input type=button class="b" value="Add new row" onclick=row()>
+    <input type=button class="b" value="Delete selected rows" onclick=del()>
+    <script>
+        function row() {
+            var x = document.getElementById('mytable').insertRow(2)
+            var y = x.insertCell(0)
+            var z = x.insertCell(1)
+            var a=x.insertCell(2);
+            var rollEl=document.getElementById("rollno");
+            var numberEl=document.getElementById("name");
+            z.textContent = rollEl.value
+            a.textContent=numberEl.value;
+        }
+        function del(){
+            
+        }
+    </script>
+</body>
+
+</html>
