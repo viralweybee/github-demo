@@ -1,0 +1,74 @@
+1.) Write a JavaScript program to filter out the specified values from a specified array. Return the original array without filtered values.
+Input : ['a', 'b', 'c', 'a', 'b', 'c']->pull out a and c
+Input : ['a', 'b', 'c', 'a', 'b', 'c']-> pull out b
+
+ 2.) Write a JavaScript program to get every nth element in a given array.
+Input : [1, 2, 3, 4, 5, 6,7,8,9], 2
+
+3.) given one string ,seperate using comma with every consecutive combination.
+Input : 1 2 3
+
+4.)Get a list of elements that exist in both arrays
+Input : [apple, 7, 1], [7, 3, apple]
+
+5.) JavaScript: Check if the given number falls within the given range
+Input : 6, 2, 5
+Input : 4, 2, 5
+Input : 3,4
+
+6.)JavaScript: Capitalize the first letter of every word in a string
+Input : Hello everyone, i an robot.
+
+---DOM---
+
+1.) JavaScript: Remove items from a dropdown list
+Sample HTML :
+<!DOCTYPE html>
+<html><head>
+<meta charset=utf-8 />
+<title>Remove items from a dropdown list</title>
+</head><body><form>
+<select id="colorSelect">
+<option>Student 1</option>
+<option>Student 2</option>
+<option>Student 3</option>
+<option>Student 4</option>
+</select>
+<input type="button" onclick="removestudent()" value="Select and Remove"></form></body></html>
+
+2.) Write a JavaScript function to get the values of First and Last names of the following form.
+
+Sample HTML :
+<!DOCTYPE html>
+<html><head>
+<meta charset=utf-8 />
+<title>Return first and last name from a form - w3resource</title>
+</head><body>
+<form id="form1" onsubmit="getFormvalue()">
+First name: <input type="text" name="fname" value="Perry"><br>
+Last name: <input type="text" name="lname" value="Blossom"><br>
+<input type="submit" value="Submit">
+</form>
+</body>
+</html>
+
+3.) Dynamic table add and delete row
+
+<!DOCTYPE html>  
+<html lang="">  
+<head>  
+    <meta charset="utf-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <title>Table</title>  
+</head>  
+<body>  
+    <h1>Dynamic Table</h1>  
+    <table id = "mytable">  
+    <tr><th></th><th>Roll Number</th><th>Name</th></tr>  
+    <tr><td><input type=checkbox></td><td><input></td><td><input></td></tr>  
+    </table>  
+    <br>  
+    <input type = button class = "b" value = "Add new row" onclick = row()>  
+    <input type = button class = "b" value = "Delete selected rows" onclick = del()>  
+</body>  
+</html>  
