@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table</title>
+  </head>
+
+  <body>
+    <h1>Dynamic Table</h1>
+    <table id="mytable" border="1">
+      <tr>
+        <th></th>
+        <th>Roll Number</th>
+        <th>Name</th>
+      </tr>
+      <tr>
+        <td>
+          <span id="check"><input type="checkbox" class="viral" /></span>
+        </td>
+        <td><input id="rollno" /></td>
+        <td><input id="name" /></td>
+      </tr>
+    </table>
+    <br />
+    <input type="button" class="b" value="Add new row" onclick="row()" />
+    <input
+      type="button"
+      class="b"
+      value="Delete selected rows"
+      onclick="del()"
+    />
+    <script>
+      function row() {
+        var x = document.getElementById("mytable").insertRow(2);
+        var y = x.insertCell(0);
+        var rollno = x.insertCell(1);
+        var name = x.insertCell(2);
+        var rollEl = document.getElementById("rollno");
+        var nameEl = document.getElementById("name");
+        var checkEl = document.getElementById("check");
+        y.innerHTML = checkEl.innerHTML;
+        rollno.textContent = rollEl.value;
+        name.textContent = nameEl.value;
+      }
+      function del() {
+        var length = document.getElementsByClassName("viral").length;
+        for (var i = 1; i < length; i++) {
+          if (document.getElementsByClassName("viral")[i].checked) {
+            document.getElementById("mytable").deleteRow(i + 1);
+          }
+        }
+      } 
+    </script>
+  </body>
+</html>
