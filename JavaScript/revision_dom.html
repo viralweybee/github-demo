@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .democlass {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <!------------------------------------------------------------------- challenge 1 --------------------------------------------------------->
+
+
+
+    <!-- <ul></ul>
+    <script>
+        const fruit=["apple","banana","tomato"]
+        const ul=document.querySelector('ul');
+       fruit.forEach((element)=>{
+        const li=document.createElement('li')
+        li.textContent=element
+        ul.appendChild(li);
+       })
+    </script> -->
+
+
+
+
+    <!----------------------------------------------------------------------- challenge 2 -------------------------------------------------------->
+
+
+    <!-- <div>
+    </div>
+    <script>
+        const div=document.querySelector('div');
+        const imageSrc = "https://crocoder.dev/icon.png";
+        const img=document.createElement('img');
+        img.src=imageSrc;
+        div.appendChild(img)
+    </script> -->
+
+    <!------------------------------------------------------------------------ challenge3 ---------------------------------------------------->
+    <!-- <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+      </ul>
+      <ul>
+        <li>a</li>
+        <li>b</li>
+        <li>c</li>
+      </ul>
+      <ul>
+        <li>👻</li>
+        <li>👽</li>
+        <li>🦁</li>
+      </ul>
+
+      <script>
+        const first=[...document.querySelectorAll("ul>li:first-child")]
+        const second=[...document.querySelectorAll('ul>li:last-child')]
+        first.forEach((li)=>{
+            li.textContent='first'
+        })
+        second.forEach((li)=>{
+            li.textContent='second'
+        })
+      </script> -->
+
+
+
+    <!------------------------------------------------------------------- challenge 4 ------------------------------------------------------------>
+    <div id="list-app">
+        <ul>
+            <li>
+                hellow
+            </li>
+            <li>
+                the dom
+            </li>
+            <li>
+                callbacks
+            </li>
+        </ul>
+        <button onclick="eventclick()">createnew</button>
+    </div>
+    <script>
+        function eventclick(){
+        const ul=document.querySelector('ul');
+        // const li=document.createElement('li')
+        // li.textContent='';
+        // ul.appendChild(li);
+        var html=`<li></li>`;
+            ul.insertAdjacentHTML('beforeend',html)
+        }
+        const ul=document.querySelector('ul')
+        ul.addEventListener('click',function(event){
+            if(event.target.tagName==='LI'){
+                const text=prompt("enter a new text")
+                event.target.innerHTML=text;
+            }
+        })
+ 
+    </script>
+</body>
+
+</html>

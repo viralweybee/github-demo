@@ -1,18 +1,30 @@
-<!DOCTYPE html>  
-<html lang="">  
-<head>  
-    <meta charset="utf-8">  
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-    <title>Table</title>  
-</head>  
-<body>  
-    <h1>Dynamic Table</h1>  
-    <table id = "mytable">  
-    <tr><th></th><th>Roll Number</th><th>Name</th></tr>  
-    <tr><td><input type=checkbox></td><td><input></td><td><input></td></tr>  
-    </table>  
-    <br>  
-    <input type = button class = "b" value = "Add new row" onclick = row()>  
-    <input type = button class = "b" value = "Delete selected rows" onclick = del()>  
-</body>  
-</html>  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        viral
+    </p>
+    <script>
+        // let person =Number(prompt("Enter a age number"))
+        // if(person>18){
+        //     alert('ok')
+        // }
+        // else{
+        //     alert('not ok')
+        // }
+      const p=document.querySelector('p')
+      p.addEventListener("click", function(event) {
+        console.log(event.target.tagName)
+    if (event.target.tagName === "P") {
+        const text = prompt("Enter new text:");
+        event.target.innerHTML = text;
+    }
+});
+    </script>
+</body>
+</html>
