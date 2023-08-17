@@ -50,3 +50,14 @@ for(const [i,value] of movements.entries()){
 // movements.forEach(function(value){
 //     console.log(value)
 // })
+
+
+//reduce
+// const balance=movements.reduce(function(acc,curr,i,arr){
+//     console.log(`Iteration ${i}: ${acc}`)
+//     return acc+curr;
+// })
+// console.log(balance)
+
+
+
