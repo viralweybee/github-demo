@@ -116,24 +116,24 @@ const createUsernames = function (accs) {
   });
 };
 createUsernames(accounts);
-
+//--------------------------------------------------------------------update Ui------------------------------------------------------------
 const updateUI = function (acc) {
-  // Display movements
+  //------------------------ Display movements----------------------
   displayMovements(acc.movements);
 
-  // Display balance
+  // -------------------Display balance--------------------------
   calcDisplayBalance(acc);
 
-  // Display summary
+  //------------------- Display summary-------------------------
   calcDisplaySummary(acc);
 };
 
-
+//----------------------------------------------start --------------------------------------------------->
 //-------------------------------------- Event handlers------------------------
 let currentAccount;
 
 btnLogin.addEventListener('click', function (e) {
-  // Prevent form from submitting
+  // Prevent submitting
   e.preventDefault();
 
   currentAccount = accounts.find(
@@ -150,7 +150,7 @@ btnLogin.addEventListener('click', function (e) {
 
     // Clear input fields
     inputLoginUsername.value = inputLoginPin.value = '';
-    inputLoginPin.blur();
+
 
     // Update UI
     updateUI(currentAccount);

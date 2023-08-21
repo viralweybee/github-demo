@@ -61,3 +61,8 @@ for(const [i,value] of movements.entries()){
 
 
 
+// -------------------------------------------------------------array from method revision--------------------------------------------------------------
+const y=Array.from({length: 5},(curr,i)=>i+1)
+console.log(y)
+
+
